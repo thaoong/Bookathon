@@ -46,15 +46,15 @@ ScrollReveal().reveal(".header__content .info", {
 });
 ScrollReveal().reveal(".author_img", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 500,
 });
 ScrollReveal().reveal(".author_info", {
   ...scrollRevealOption,
-  delay: 2600,
+  delay: 500,
 });
 ScrollReveal().reveal(".review_info", {
   ...scrollRevealOption,
-  delay: 2800,
+  delay: 500,
 });
 
 // contact form variables
