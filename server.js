@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/", express.static("public"));
 
 app.post("/create-payment-link", async (req, res) => {
-  const YOUR_DOMAIN = `http://localhost:3030`;
+  const YOUR_DOMAIN = process.env.DOMAIN;
   const body = {
     orderCode: Number(String(Date.now()).slice(-6)),
     amount: 5000,
