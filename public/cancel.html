@@ -106,7 +106,7 @@
       <section class="contact-form">
         <h2>Contact Bookathon</h2>
         <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
-          <input type="hidden" name="access_key" value="$REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" id="access_key" name="access_key">
           <div class="input-wrapper"> 
             <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
             <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
@@ -141,6 +141,6 @@
       </div>
     </section>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

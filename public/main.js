@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
+const access_key = document.getElementById("access_key")
 
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
@@ -13,6 +14,8 @@ navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
+
+access_key.value = import.meta.env.WEB3FORMS_ACCESS_KEY;
 
 const scrollRevealOption = {
   distance: "50px",
