@@ -15,7 +15,7 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-access_key.value = import.meta.env.WEB3FORMS_ACCESS_KEY;
+access_key.value = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 const scrollRevealOption = {
   distance: "50px",
